@@ -8,6 +8,12 @@ dist-ssr
 assets-mailisa
 *.zip
 
+# Tài liệu quy trình nội bộ & workspace Postman — không cần cho web chạy
+repo-docs-v3
+docs
+.postman
+postman
+
 # Editor
 .vscode/*
 !.vscode/extensions.json
