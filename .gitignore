@@ -4,8 +4,9 @@ dist-ssr
 *.local
 .vite
 
-# Tài nguyên nguồn chưa xử lý (ảnh gốc, zip) — ảnh dùng cho web nằm ở public/images
+# Tài nguyên nguồn chưa xử lý (ảnh gốc, zip) — ảnh dùng cho web nằm ở src/assets/villas
 assets-mailisa
+image-backup-goc
 *.zip
 
 # Tài liệu quy trình nội bộ & workspace Postman — không cần cho web chạy
