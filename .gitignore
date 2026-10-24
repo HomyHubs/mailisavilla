@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+
+# Tài nguyên nguồn chưa xử lý (ảnh gốc, zip) — ảnh dùng cho web nằm ở public/images
+assets-mailisa
+*.zip
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
