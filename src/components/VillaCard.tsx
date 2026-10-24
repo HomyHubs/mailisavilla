@@ -25,12 +25,12 @@ export default function VillaCard({ villa }: { villa: Villa }) {
           {villa.shortDesc}
         </p>
 
-        {/* Thông tin: mỗi mục một dòng riêng -> mọi card đều đúng 2 dòng, không rớt lệch */}
+        {/* Thông tin: mỗi mục một dòng riêng, canh giữa cho cân đối */}
         <div className="mt-3 space-y-1 text-sm text-bark/80">
-          <div className="flex items-center gap-1">
+          <div className="flex items-center justify-center gap-1">
             <BedDouble size={16} className="shrink-0 text-clay" /> {villa.bedrooms} phòng ngủ
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center justify-center gap-1">
             <Users size={16} className="shrink-0 text-clay" /> {villa.capacity}
           </div>
         </div>
