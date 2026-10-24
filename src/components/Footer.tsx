@@ -47,9 +47,16 @@ export default function Footer() {
                 {contact.email}
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <MapPin size={16} />
-              <span>{contact.address}</span>
+            <li className="flex items-start gap-2">
+              <MapPin size={16} className="mt-0.5 shrink-0" />
+              <a
+                href={contact.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-clay"
+              >
+                {contact.address}
+              </a>
             </li>
             <li className="flex items-center gap-2">
               <Facebook size={16} />
