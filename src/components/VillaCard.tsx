@@ -7,7 +7,7 @@ export default function VillaCard({ villa }: { villa: Villa }) {
   return (
     <Link
       to={`/villa/${villa.slug}`}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-sand bg-white shadow-sm transition hover:shadow-md"
+      className="group block overflow-hidden rounded-2xl border border-sand bg-white shadow-sm transition hover:shadow-md"
     >
       <div className="aspect-[4/3] overflow-hidden">
         <img
@@ -17,7 +17,7 @@ export default function VillaCard({ villa }: { villa: Villa }) {
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
       </div>
-      <div className="flex h-full flex-col p-5">
+      <div className="p-5">
         <h3 className="text-lg font-semibold text-forest">{villa.name}</h3>
 
         {/* Mô tả — giãn cách khỏi tiêu đề + giãn dòng cho thoáng; luôn 2 dòng để card đều nhau */}
