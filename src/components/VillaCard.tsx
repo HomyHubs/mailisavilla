@@ -20,8 +20,8 @@ export default function VillaCard({ villa }: { villa: Villa }) {
       <div className="flex h-full flex-col p-5">
         <h3 className="text-lg font-semibold text-forest">{villa.name}</h3>
 
-        {/* Mô tả — luôn chiếm 2 dòng (cắt gọn nếu dài) để các card đều nhau */}
-        <p className="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-bark/70">
+        {/* Mô tả — giãn cách khỏi tiêu đề + giãn dòng cho thoáng; luôn 2 dòng để card đều nhau */}
+        <p className="mt-2.5 line-clamp-2 min-h-[2.75rem] text-sm leading-relaxed text-bark/70">
           {villa.shortDesc}
         </p>
 
