@@ -20,23 +20,23 @@ export default function VillaCard({ villa }: { villa: Villa }) {
       <div className="flex h-full flex-col p-5">
         <h3 className="text-lg font-semibold text-forest">{villa.name}</h3>
 
-        {/* Dòng 1: mô tả — luôn chiếm 2 dòng để các card đều nhau */}
+        {/* Mô tả — luôn chiếm 2 dòng (cắt gọn nếu dài) để các card đều nhau */}
         <p className="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-bark/70">
           {villa.shortDesc}
         </p>
 
-        {/* Dòng 2: số phòng ngủ · số khách — luôn chiếm 2 dòng để các card đều nhau */}
-        <div className="mt-3 flex min-h-[2.75rem] flex-wrap content-start items-start gap-x-4 gap-y-1 text-sm text-bark/80">
-          <span className="flex items-center gap-1">
+        {/* Thông tin: mỗi mục một dòng riêng -> mọi card đều đúng 2 dòng, không rớt lệch */}
+        <div className="mt-3 space-y-1 text-sm text-bark/80">
+          <div className="flex items-center gap-1">
             <BedDouble size={16} className="shrink-0 text-clay" /> {villa.bedrooms} phòng ngủ
-          </span>
-          <span className="flex items-center gap-1">
+          </div>
+          <div className="flex items-center gap-1">
             <Users size={16} className="shrink-0 text-clay" /> {villa.capacity}
-          </span>
+          </div>
         </div>
 
-        {/* Nút luôn nằm đáy card để thẳng hàng giữa các card */}
-        <span className="mt-auto inline-block pt-3 text-sm font-semibold text-clay group-hover:underline">
+        {/* Nút nằm đáy card, cách phần trên vừa phải */}
+        <span className="mt-4 inline-block text-sm font-semibold text-clay group-hover:underline">
           Xem chi tiết →
         </span>
       </div>
