@@ -32,18 +32,18 @@ export default function VillaTypePage() {
   return (
     <article>
       {/* Hero ảnh cover của loại villa */}
-      <section className="relative h-[46vh] overflow-hidden">
+      <section className="relative h-[55vh] overflow-hidden sm:h-[46vh]">
         <img
           src={coverImage(villa.slug as VillaSlug)}
           alt={villa.name}
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-bark/70 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 mx-auto max-w-6xl px-4 py-8 text-cream">
-          <h1 className="font-serif text-3xl font-bold text-cream md:text-5xl">
+        <div className="absolute inset-0 bg-gradient-to-t from-bark/80 via-bark/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 mx-auto max-w-6xl px-5 py-8 text-cream">
+          <h1 className="font-serif text-3xl font-bold text-cream sm:text-4xl md:text-5xl">
             {villa.name}
           </h1>
-          <div className="mt-3 flex flex-wrap gap-4 text-sm">
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
             <span className="flex items-center gap-1">
               <BedDouble size={18} /> {villa.bedrooms} phòng ngủ
             </span>

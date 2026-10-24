@@ -9,9 +9,9 @@ const highlights = [
 
 export default function Intro() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16">
+    <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold md:text-4xl">Sống chậm giữa Đà Lạt</h2>
+        <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">Sống chậm giữa Đà Lạt</h2>
         <p className="mt-4 text-bark/80">
           Mailisa Villa mang đến những căn villa ấm cúng, gần gũi thiên nhiên — nơi
           bạn và người thân có thể thật sự thư giãn, tận hưởng tiết trời se lạnh và

@@ -58,11 +58,11 @@ export default function Gallery({ images, alt }: { images: string[]; alt: string
             <X size={32} />
           </button>
           <button
-            className="absolute left-4 text-white/80 hover:text-white"
+            className="absolute left-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white hover:bg-white/25 sm:left-4"
             onClick={(e) => { e.stopPropagation(); prev() }}
             aria-label="Ảnh trước"
           >
-            <ChevronLeft size={40} />
+            <ChevronLeft size={32} />
           </button>
           <img
             src={images[active]}
@@ -71,11 +71,11 @@ export default function Gallery({ images, alt }: { images: string[]; alt: string
             onClick={(e) => e.stopPropagation()}
           />
           <button
-            className="absolute right-4 text-white/80 hover:text-white"
+            className="absolute right-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white hover:bg-white/25 sm:right-4"
             onClick={(e) => { e.stopPropagation(); next() }}
             aria-label="Ảnh sau"
           >
-            <ChevronRight size={40} />
+            <ChevronRight size={32} />
           </button>
         </div>
       )}
