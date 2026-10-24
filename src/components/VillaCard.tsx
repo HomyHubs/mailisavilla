@@ -17,7 +17,7 @@ export default function VillaCard({ villa }: { villa: Villa }) {
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
       </div>
-      <div className="p-5">
+      <div className="p-5 text-center">
         <h3 className="text-lg font-semibold text-forest">{villa.name}</h3>
 
         {/* Mô tả — giãn cách khỏi tiêu đề + giãn dòng cho thoáng; luôn 2 dòng để card đều nhau */}
