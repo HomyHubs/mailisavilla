@@ -22,7 +22,8 @@ src/assets/villas/9pn/   <- villa 9 phòng ngủ
 Quy tắc:
 - Web **tự đọc HẾT ảnh** trong mỗi thư mục — anh bỏ thêm bao nhiêu ảnh cũng tự hiện, xoá cũng tự ẩn. **Không cần sửa code.**
 - Ảnh sắp xếp theo **tên file** tăng dần. Nên đặt tên `01.jpg`, `02.jpg`, `03.jpg`... để dễ sắp thứ tự.
-- Ảnh **đại diện** (hiện ở ngoài trang chủ): đặt tên bắt đầu bằng `cover` (ví dụ `cover.jpg`). Nếu không có file `cover`, web tự lấy ảnh đầu tiên làm đại diện.
+- Ảnh **banner trang chủ (Hero)**: nằm tại file `src/assets/hero.jpg`. Muốn đổi ảnh banner đầu trang chủ, chỉ cần thay thế file này.
+- Ảnh **đại diện từng loại villa** (hiện ở danh sách villa ngoài trang chủ): đặt tên bắt đầu bằng `cover` (ví dụ `cover.jpg`). Nếu không có file `cover`, web tự lấy ảnh đầu tiên làm đại diện.
 - Định dạng dùng được: `.jpg`, `.jpeg`, `.png`, `.webp`.
 - **Mẹo:** ảnh nên dưới ~500KB cho web tải nhanh. Ảnh quá nặng (vài MB) nên giảm dung lượng trước (dùng trang squoosh.app hoặc tinypng.com — kéo ảnh vào, tải ảnh nhẹ hơn về).
 
