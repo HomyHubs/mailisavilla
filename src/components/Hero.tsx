@@ -1,12 +1,12 @@
 import { contact } from '../config/contact'
-import heroImage from '../assets/hero.jpg'
+import { coverImage } from '../data/images'
 import { zaloLink, bookingMessage } from '../lib/booking'
 
 export default function Hero() {
   return (
     <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden sm:min-h-[72vh]">
       <img
-        src={heroImage}
+        src={coverImage('7pn')}
         alt="Mailisa Villa Đà Lạt"
         className="absolute inset-0 h-full w-full object-cover"
       />
